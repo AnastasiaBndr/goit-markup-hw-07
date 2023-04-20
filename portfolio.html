@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/laptop.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -31,8 +32,43 @@
           <a href="./index.html" class="logo link"
             >Web<span class="studio-color">Studio</span></a
           >
+          <ul class="menu list hidden">
+            <li>
+              <a
+                class="menu-item link menu-item-studio-index"
+                href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li>
+              <a class="menu-item link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li>
+              <a class="menu-item link" href="">Contacts</a>
+            </li>
+          </ul>
         </nav>
-        <button type="button" class="head-button" data-modal-nav-open>
+
+        <address class="address hidden">
+          <ul class="list address-list">
+            <li>
+              <a href="mailto:info@devstudio.com" class="link contact"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+110001111111" class="link contact"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <button
+          type="button"
+          class="head-button hidden-for-laptop"
+          data-modal-nav-open
+        >
           <svg class="header-icon" width="24px" height="24px">
             <use href="./images/icons.svg#icon-strokes"></use>
           </svg>
@@ -70,12 +106,12 @@
                 ><div class="portfolio-img-wrapper">
                   <picture>
                     <source
-                      srcset="./images/Banking-app-interface-concept.jpg 1x"
-                      media="(min-width: 1200px)"
+                      srcset="./images/mobile/banking-mobile.jpg 1x"
+                      media="(min-width: 430px)"
                     />
                   </picture>
                   <img
-                    src="./images/mobile/banking-mobile.jpg"
+                    src="./images/Banking-app-interface-concept.jpg"
                     alt="Banking App Interface Concept"
                     width="396"
                     height="280"
@@ -98,7 +134,7 @@
                   <picture>
                     <source
                       srcset="./images/cashless-payment.jpg 1x"
-                      media="(min-width: 1200px)"
+                      media="(min-width: 430px)"
                     />
                   </picture>
                   <img
@@ -125,7 +161,7 @@
                   <picture>
                     <source
                       srcset="./images/meditation-app.jpg 1x"
-                      media="(min-width: 1200px)"
+                      media="(min-width: 430px)"
                     />
                   </picture>
                   <img
@@ -152,7 +188,7 @@
                   <picture>
                     <source
                       srcset="./images/taxi-service.jpg 1x"
-                      media="(min-width: 1200px)"
+                      media="(min-width: 430px)"
                     />
                   </picture>
                   <img
@@ -179,7 +215,7 @@
                   <picture>
                     <source
                       srcset="./images/screen-illustration.jpg 1x"
-                      media="(min-width: 1200px)"
+                      media="(min-width: 430px)"
                     />
                   </picture>
                   <img
@@ -206,7 +242,7 @@
                   <picture>
                     <source
                       srcset="./images/online-courses.jpg 1x"
-                      media="(min-width: 1200px)"
+                      media="(min-width: 430px)"
                     />
                   </picture>
                   <img
@@ -233,7 +269,7 @@
                   <picture>
                     <source
                       srcset="./images/instagram-stories-concept.jpg 1x"
-                      media="(min-width: 1200px)"
+                      media="(min-width: 430px)"
                     />
                   </picture>
                   <img
@@ -260,7 +296,7 @@
                   <picture>
                     <source
                       srcset="./images/organic-food.jpg 1x"
-                      media="(min-width: 1200px)"
+                      media="(min-width: 430px)"
                     />
                   </picture>
                   <img
@@ -287,7 +323,7 @@
                   <picture>
                     <source
                       srcset="./images/fresh-coffee.jpg 1x"
-                      media="(min-width: 1200px)"
+                      media="(min-width: 430px)"
                     />
                   </picture>
                   <img

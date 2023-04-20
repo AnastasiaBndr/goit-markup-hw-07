@@ -1,0 +1,240 @@
+@media screen and (min-width: 430px) {
+  :root {
+    --small-text-color: #2e2f42;
+    --background-color: #ffffff;
+    --hover-and-focus-color: #404bbf;
+    --blue-button-and-logo-color: #4d5ae5;
+    --small-text-dark-theme-color: #f4f4fd;
+    --green-icon-focus-hover-color: #31d0aa;
+  }
+
+  .hidden {
+    display: contents;
+  }
+  .hidden-for-laptop {
+    display: none;
+  }
+
+  body {
+    width: 768px;
+  }
+  .container {
+    width: 768px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* ================HEADER STARTED================ */
+  .page-header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .page-header-boxing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    margin-right: 120px;
+    margin-bottom: 0;
+  }
+
+  .page-nav {
+    align-items: center;
+  }
+  .menu-item {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--small-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    position: relative;
+    margin-right: 40px;
+  }
+  .contact {
+    font-family: "Roboto";
+    margin-right: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    color: #434455;
+  }
+
+  .header-links {
+    line-height: 0;
+  }
+  .address-list li:last-child {
+    margin-top: 5px;
+  }
+  .address-list li {
+    padding: 0;
+  }
+  .menu li:nth-child(-n + 2) {
+    margin-bottom: 0;
+  }
+  .address li:first-child {
+    margin-bottom: 0px;
+  }
+
+  .menu-item::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 4px;
+    bottom: -27px;
+    right: 0;
+    background: var(--hover-and-focus-color);
+    border-radius: 2px;
+    transition: width 0.5s, left 0.5s;
+  }
+  .menu-item {
+    position: relative;
+  }
+  .menu-item:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  /* ================HEADER ENDED================ */
+
+  /* ================HERO STARTED================ */
+
+  .hero {
+    max-width: 100%;
+  }
+  .main-title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-transform: none;
+  }
+
+  .hero-button {
+    margin-top: 36px;
+  }
+
+  .hero {
+    max-width: 100%;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/mobile/hero-backgr-laptop.jpg");
+  }
+  /* ================HERO ENDED================ */
+
+  /* ================FIRST SECTION STARTED================ */
+  .small-descr-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .small-descr-section-item {
+    max-width: 356px;
+  }
+
+  .small-descr-section-item:nth-child(-n + 3) {
+    margin-bottom: 0;
+  }
+  .small-descr-list .small-title {
+    text-align: left;
+  }
+  .small-descr-section-item:nth-child(even) {
+    margin-left: 24px;
+  }
+
+  .small-descr-section-item:nth-child(-n + 2) {
+    margin-bottom: 72px;
+  }
+
+  /* ================FIRST SECTION ENDED================ */
+
+  /* ================OUR TEAM SECTION STARTED================ */
+
+  .our-team {
+    padding-bottom: 96px;
+  }
+  .our-team-list-item {
+    max-width: 264px;
+    margin: 0;
+  }
+
+  .our-team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .our-team-list-item:nth-child(even) {
+    margin-left: 24px;
+  }
+
+  .our-team-list-item:nth-child(-n + 2) {
+    margin-bottom: 64px;
+  }
+  .our-team-list .small-title {
+    margin-bottom: 8px;
+  }
+  /* ================OUR TEAM ENDED================ */
+
+  /* ================CUSTOMERS STARTED================ */
+
+  .customers-item:nth-child(2n + 1) {
+    margin-right: 0;
+  }
+
+  .customers-list{
+    justify-content: center;
+  }
+
+  .customers-item{
+    margin-left: 24px;
+  }
+
+  .customers-item:nth-child(3n+1){
+    margin-left: 0;
+  }
+
+  /* ================CUSTOMERS ENDED================ */
+
+  /* ================FOOTER STARTED================ */
+
+  .page-footer{
+    text-align:left;
+  }
+  .footer-descr{
+    margin: 0;
+  }
+ 
+  .footer-input{
+    max-width: 264px;
+  }
+  .input-button-footer{
+    flex-wrap: nowrap;
+  }
+
+  .webstudio-container .links{
+    margin-top: 0;
+    margin-left: 24px;
+  }
+  .webstudio-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* ================FOOTER ENDED================ */
+
+  .portfolio-item{
+    max-width: 356px;
+  }
+
+  .buttons-list-portfolio{
+    justify-content: center;
+  }
+}

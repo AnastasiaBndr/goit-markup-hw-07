@@ -321,7 +321,7 @@ button {
 .our-team {
   background-color: var(--small-text-dark-theme-color);
   padding-top: 96px;
-  padding-bottom: 96px;
+  padding-bottom: calc(96px - 72px);
 }
 .our-team-list-item {
   margin: 0 calc(82px - 16px);
@@ -331,7 +331,7 @@ button {
   text-align: center;
   padding-bottom: 32px;
 }
-.our-team-list-item:nth-child(-n + 3) {
+.our-team-list-item {
   margin-bottom: 72px;
 }
 .footer-links {

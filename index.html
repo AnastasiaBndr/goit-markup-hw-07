@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/laptop.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -31,9 +32,44 @@
           <a href="./index.html" class="logo link"
             >Web<span class="studio-color">Studio</span></a
           >
-          
+          <ul class="menu list hidden">
+            <li>
+              <a
+                class="menu-item link menu-item-studio-index"
+                href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li>
+              <a class="menu-item link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li>
+              <a class="menu-item link" href="">Contacts</a>
+            </li>
+          </ul>
         </nav>
-        <button type="button" class="head-button" data-modal-nav-open><svg class="header-icon" width="24px" height="24px">
+
+        <address class="address hidden">
+          <ul class="list address-list">
+            <li>
+              <a href="mailto:info@devstudio.com" class="link contact"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+110001111111" class="link contact"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <button
+          type="button"
+          class="head-button hidden-for-laptop"
+          data-modal-nav-open
+        >
+          <svg class="header-icon" width="24px" height="24px">
             <use href="./images/icons.svg#icon-strokes"></use>
           </svg>
         </button>
@@ -56,9 +92,9 @@
       <section class="small-descr-section section">
         <div class="container">
           <h2 class="hidden-title"></h2>
-          <ul class="list">
+          <ul class="list small-descr-list">
             <li class="small-descr-section-item">
-              <div class="hidden small-text-image">
+              <div class="hidden hidden-for-laptop small-text-image">
                 <svg class="small-text-icon">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
@@ -71,7 +107,7 @@
               </p>
             </li>
             <li class="small-descr-section-item">
-              <div class="hidden small-text-image">
+              <div class="hidden hidden-for-laptop small-text-image">
                 <svg class="small-text-icon">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
@@ -83,7 +119,7 @@
               </p>
             </li>
             <li class="small-descr-section-item">
-              <div class="hidden small-text-image">
+              <div class="hidden hidden-for-laptop small-text-image">
                 <svg class="small-text-icon">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
@@ -95,7 +131,7 @@
               </p>
             </li>
             <li class="small-descr-section-item">
-              <div class="hidden small-text-image">
+              <div class="hidden hidden-for-laptop small-text-image">
                 <svg class="small-text-icon">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
@@ -111,7 +147,7 @@
       </section>
       <!-- What are we doing -->
       <!-- Images -->
-      <section class="what-are-we-doing hidden">
+      <section class="what-are-we-doing hidden hidden-for-laptop">
         <div class="container">
           <h2 class="secondary-title">What are we doing</h2>
           <ul class="list">
@@ -135,7 +171,7 @@
       <section class="our-team">
         <div class="container">
           <h2 class="secondary-title">Our Team</h2>
-          <ul class="list">
+          <ul class="list our-team-list">
             <li class="our-team-list-item">
               <img
                 src="./images/men-with-beard.jpg"
@@ -493,48 +529,48 @@
           </ul>
         </div>
         <div class="modal-info-lower-part">
-        <address class="address">
-          <ul class="list">
-            <li>
-              <a href="tel:+110001111111" class="link contact"
-                >+11 (000)111-11-11</a
-              >
+          <address class="address">
+            <ul class="list">
+              <li>
+                <a href="tel:+110001111111" class="link contact"
+                  >+11 (000)111-11-11</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="link contact-email"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="navigation-modal-links">
+            <li class="our-team-link-item list">
+              <a class="our-team-link" href=""
+                ><svg class="our-team-soc-icon" width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li>
-              <a href="mailto:info@devstudio.com" class="link contact-email"
-                >info@devstudio.com</a
-              >
+            <li class="our-team-link-item list">
+              <a class="our-team-link" href=""
+                ><svg class="our-team-soc-icon" width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+            <li class="our-team-link-item list">
+              <a class="our-team-link" href=""
+                ><svg class="our-team-soc-icon" width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="our-team-link-item list">
+              <a class="our-team-link" href="">
+                <svg class="our-team-soc-icon" width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg
+              ></a>
             </li>
           </ul>
-        </address>
-        <ul class="navigation-modal-links">
-          <li class="our-team-link-item list">
-            <a class="our-team-link" href=""
-              ><svg class="our-team-soc-icon" width="24px" height="24px">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="our-team-link-item list">
-            <a class="our-team-link" href=""
-              ><svg class="our-team-soc-icon" width="24px" height="24px">
-                <use href="./images/icons.svg#icon-twitter"></use></svg
-            ></a>
-          </li>
-          <li class="our-team-link-item list">
-            <a class="our-team-link" href=""
-              ><svg class="our-team-soc-icon" width="24px" height="24px">
-                <use href="./images/icons.svg#icon-facebook"></use></svg
-            ></a>
-          </li>
-          <li class="our-team-link-item list">
-            <a class="our-team-link" href="">
-              <svg class="our-team-soc-icon" width="24px" height="24px">
-                <use href="./images/icons.svg#icon-linkedin"></use></svg
-            ></a>
-          </li>
-        </ul>
-      </div>
+        </div>
       </section>
     </div>
     <script src="./js/modal-nav.js"></script>
