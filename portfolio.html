@@ -68,8 +68,14 @@
             <li class="portfolio-item">
               <a class="link portfolio-link-wrapper" href=""
                 ><div class="portfolio-img-wrapper">
+                  <picture>
+                    <source
+                      srcset="./images/Banking-app-interface-concept.jpg 1x"
+                      media="(min-width: 1200px)"
+                    />
+                  </picture>
                   <img
-                    src="./images/Banking-app-interface-concept.jpg"
+                    src="./images/mobile/banking-mobile.jpg"
                     alt="Banking App Interface Concept"
                     width="396"
                     height="280"
@@ -89,8 +95,14 @@
             <li class="portfolio-item">
               <a class="link portfolio-link-wrapper" href=""
                 ><div class="portfolio-img-wrapper">
+                  <picture>
+                    <source
+                      srcset="./images/cashless-payment.jpg 1x"
+                      media="(min-width: 1200px)"
+                    />
+                  </picture>
                   <img
-                    src="./images/cashless-payment.jpg"
+                    src="./images/mobile/cashless-mobile.jpg"
                     alt="Cashless Payment"
                     width="396"
                     height="280"
@@ -110,8 +122,14 @@
             <li class="portfolio-item">
               <a class="link portfolio-link-wrapper" href=""
                 ><div class="portfolio-img-wrapper">
+                  <picture>
+                    <source
+                      srcset="./images/meditation-app.jpg 1x"
+                      media="(min-width: 1200px)"
+                    />
+                  </picture>
                   <img
-                    src="./images/meditation-app.jpg"
+                    src="./images/mobile/meditation-mobile.jpg"
                     alt="Meditation App"
                     width="396"
                     height="280"
@@ -131,8 +149,14 @@
             <li class="portfolio-item">
               <a class="link portfolio-link-wrapper" href=""
                 ><div class="portfolio-img-wrapper">
+                  <picture>
+                    <source
+                      srcset="./images/taxi-service.jpg 1x"
+                      media="(min-width: 1200px)"
+                    />
+                  </picture>
                   <img
-                    src="./images/taxi-service.jpg"
+                    src="./images/mobile/taxi-service-mobile.jpg"
                     alt="Taxi Service"
                     width="396"
                     height="280"
@@ -152,8 +176,14 @@
             <li class="portfolio-item">
               <a class="link portfolio-link-wrapper" href=""
                 ><div class="portfolio-img-wrapper">
+                  <picture>
+                    <source
+                      srcset="./images/screen-illustration.jpg 1x"
+                      media="(min-width: 1200px)"
+                    />
+                  </picture>
                   <img
-                    src="./images/screen-illustration.jpg"
+                    src="./images/mobile/screen-illustration-mobile.jpg"
                     alt="Screen Illustrations"
                     width="396"
                     height="280"
@@ -173,8 +203,14 @@
             <li class="portfolio-item">
               <a class="link portfolio-link-wrapper" href=""
                 ><div class="portfolio-img-wrapper">
+                  <picture>
+                    <source
+                      srcset="./images/online-courses.jpg 1x"
+                      media="(min-width: 1200px)"
+                    />
+                  </picture>
                   <img
-                    src="./images/online-courses.jpg"
+                    src="./images/mobile/online-courses-mobile.jpg"
                     alt="Online Courses"
                     width="396"
                     height="280"
@@ -194,8 +230,14 @@
             <li class="portfolio-item">
               <a class="link portfolio-link-wrapper" href=""
                 ><div class="portfolio-img-wrapper">
+                  <picture>
+                    <source
+                      srcset="./images/instagram-stories-concept.jpg 1x"
+                      media="(min-width: 1200px)"
+                    />
+                  </picture>
                   <img
-                    src="./images/instagram-stories-concept.jpg"
+                    src="./images/mobile/inst-courses-mobile.jpg"
                     alt="Instagram Stories Concept"
                     width="396"
                     height="280"
@@ -215,8 +257,14 @@
             <li class="portfolio-item">
               <a class="link portfolio-link-wrapper" href=""
                 ><div class="portfolio-img-wrapper">
+                  <picture>
+                    <source
+                      srcset="./images/organic-food.jpg 1x"
+                      media="(min-width: 1200px)"
+                    />
+                  </picture>
                   <img
-                    src="./images/organic-food.jpg"
+                    src="./images/mobile/organic-food-mobile.jpg"
                     alt="Organic Food"
                     width="396"
                     height="280"
@@ -236,8 +284,14 @@
             <li class="portfolio-item">
               <a class="link portfolio-link-wrapper" href=""
                 ><div class="portfolio-img-wrapper">
+                  <picture>
+                    <source
+                      srcset="./images/fresh-coffee.jpg 1x"
+                      media="(min-width: 1200px)"
+                    />
+                  </picture>
                   <img
-                    src="./images/fresh-coffee.jpg"
+                    src="./images/mobile/coffee-mobile.jpg"
                     alt="Fresh Coffee"
                     width="396"
                     height="280"
@@ -322,70 +376,75 @@
     </footer>
     <div data-modal-nav class="modal-navigation is-hidden">
       <section class="modal-info">
-        <button
-          data-modal-nav-close
-          type="button"
-          class="data-model-close-button"
-        >
-          <svg width="8px" height="8px">
-            <use href="./images/icons.svg#icon-cross"></use>
-          </svg>
-        </button>
-        <ul class="menu list">
-          <li>
-            <a class="menu-item link menu-item-studio-index" href="./index.html"
-              >Studio</a
-            >
-          </li>
-          <li>
-            <a class="menu-item link" href="./portfolio.html">Portfolio</a>
-          </li>
-          <li>
-            <a class="menu-item link" href="">Contacts</a>
-          </li>
-        </ul>
-
-        <address class="address">
-          <ul class="list">
+        <div class="modal-info-upper-part">
+          <button
+            data-modal-nav-close
+            type="button"
+            class="data-model-close-button"
+          >
+            <svg class="model-button-icon" width="8px" height="8px">
+              <use href="./images/icons.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <ul class="menu list">
             <li>
-              <a href="tel:+110001111111" class="link contact"
-                >+11 (000)111-11-11</a
+              <a
+                class="menu-item link menu-item-studio-index"
+                href="./index.html"
+                >Studio</a
               >
             </li>
             <li>
-              <a href="mailto:info@devstudio.com" class="link contact-email"
-                >info@devstudio.com</a
-              >
+              <a class="menu-item link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li>
+              <a class="menu-item link" href="">Contacts</a>
             </li>
           </ul>
-        </address>
-        <ul class="navigation-modal-links">
-          <li class="our-team-link-item list">
-            <a class="our-team-link" href=""
-              ><svg class="our-team-soc-icon" width="24px" height="24px">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="our-team-link-item list">
-            <a class="our-team-link" href=""
-              ><svg class="our-team-soc-icon" width="24px" height="24px">
-                <use href="./images/icons.svg#icon-twitter"></use></svg
-            ></a>
-          </li>
-          <li class="our-team-link-item list">
-            <a class="our-team-link" href=""
-              ><svg class="our-team-soc-icon" width="24px" height="24px">
-                <use href="./images/icons.svg#icon-facebook"></use></svg
-            ></a>
-          </li>
-          <li class="our-team-link-item list">
-            <a class="our-team-link" href="">
-              <svg class="our-team-soc-icon" width="24px" height="24px">
-                <use href="./images/icons.svg#icon-linkedin"></use></svg
-            ></a>
-          </li>
-        </ul>
+        </div>
+        <div class="modal-info-lower-part">
+          <address class="address">
+            <ul class="list">
+              <li>
+                <a href="tel:+110001111111" class="link contact"
+                  >+11 (000)111-11-11</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="link contact-email"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="navigation-modal-links">
+            <li class="our-team-link-item list">
+              <a class="our-team-link" href=""
+                ><svg class="our-team-soc-icon" width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="our-team-link-item list">
+              <a class="our-team-link" href=""
+                ><svg class="our-team-soc-icon" width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+            <li class="our-team-link-item list">
+              <a class="our-team-link" href=""
+                ><svg class="our-team-soc-icon" width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="our-team-link-item list">
+              <a class="our-team-link" href="">
+                <svg class="our-team-soc-icon" width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
       </section>
     </div>
     <script src="./js/modal-nav.js"></script>

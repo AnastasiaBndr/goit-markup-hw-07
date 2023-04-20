@@ -466,25 +466,33 @@
     </div>
     <div data-modal-nav class="modal-navigation is-hidden">
       <section class="modal-info">
-        <button data-modal-nav-close type="button" class="data-model-close-button">
-          <svg width="8px" height="8px">
-            <use href="./images/icons.svg#icon-cross"></use>
-          </svg>
-        </button>
-        <ul class="menu list">
-          <li>
-            <a class="menu-item link menu-item-studio-index" href="./index.html"
-              >Studio</a
-            >
-          </li>
-          <li>
-            <a class="menu-item link" href="./portfolio.html">Portfolio</a>
-          </li>
-          <li>
-            <a class="menu-item link" href="">Contacts</a>
-          </li>
-        </ul>
-
+        <div class="modal-info-upper-part">
+          <button
+            data-modal-nav-close
+            type="button"
+            class="data-model-close-button"
+          >
+            <svg class="model-button-icon" width="8px" height="8px">
+              <use href="./images/icons.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <ul class="menu list">
+            <li>
+              <a
+                class="menu-item link menu-item-studio-index"
+                href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li>
+              <a class="menu-item link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li>
+              <a class="menu-item link" href="">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-info-lower-part">
         <address class="address">
           <ul class="list">
             <li>
@@ -497,7 +505,6 @@
                 >info@devstudio.com</a
               >
             </li>
-            
           </ul>
         </address>
         <ul class="navigation-modal-links">
@@ -527,6 +534,7 @@
             ></a>
           </li>
         </ul>
+      </div>
       </section>
     </div>
     <script src="./js/modal-nav.js"></script>
