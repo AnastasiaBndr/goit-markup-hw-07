@@ -85,6 +85,9 @@ button {
 .studio-color-dark-theme {
   color: var(--small-text-dark-theme-color);
 }
+.for-desktop{
+  display: none;
+}
 
 /* ==================Header================== */
 
@@ -306,18 +309,9 @@ button {
 .small-descr-section {
   padding: 96px 0;
 }
-
-.what-are-we-doing {
-  padding-bottom: 120px;
-}
 .secondary-title {
   margin-bottom: 72px;
 }
-.what-are-we-doing-item {
-  border: 1px solid #e7e9fc;
-  margin-right: 24px;
-}
-
 .our-team {
   background-color: var(--small-text-dark-theme-color);
   padding-top: 96px;
@@ -390,7 +384,7 @@ button {
 
 /* ==================IMAGES AND VECTOR================== */
 .hero {
-  max-width: 428px;
+  width: 428px;
   margin: 0 auto;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
