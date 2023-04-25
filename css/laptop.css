@@ -1,4 +1,4 @@
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 430px) and (max-width: 1400px) {
   :root {
     --small-text-color: #2e2f42;
     --background-color: #ffffff;
@@ -188,15 +188,15 @@
     margin-right: 0;
   }
 
-  .customers-list{
+  .customers-list {
     justify-content: center;
   }
 
-  .customers-item{
+  .customers-item {
     margin-left: 24px;
   }
 
-  .customers-item:nth-child(3n+1){
+  .customers-item:nth-child(3n + 1) {
     margin-left: 0;
   }
 
@@ -204,37 +204,52 @@
 
   /* ================FOOTER STARTED================ */
 
-  .page-footer{
-    text-align:left;
+  .page-footer {
+    text-align: left;
   }
-  .footer-descr{
+  .footer-descr {
     margin: 0;
   }
- 
-  .footer-input{
+
+  .footer-button {
+    margin-left: 24px;
+    width: calc(165px + 32px);
+   padding: 8px 24px;
+
+  }
+
+  .footer-button-text {
+    
+  }
+
+  .footer-input {
     max-width: 264px;
   }
-  .input-button-footer{
+  .input-button-footer {
     flex-wrap: nowrap;
   }
 
-  .webstudio-container .links{
+  .webstudio-container .links {
     margin-top: 0;
     margin-left: 24px;
   }
-  .webstudio-container{
+  .webstudio-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    margin-left: 108px;
   }
 
   /* ================FOOTER ENDED================ */
 
-  .portfolio-item{
+  .portfolio-item {
     max-width: 356px;
   }
 
-  .buttons-list-portfolio{
+  .footer-icon {
+   top:10px;
+  }
+
+  .buttons-list-portfolio {
     justify-content: center;
   }
 }
