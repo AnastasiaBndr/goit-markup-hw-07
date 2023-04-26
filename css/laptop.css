@@ -16,10 +16,8 @@
     display: none;
   }
 
-  body {
-    width: 768px;
-  }
   .container {
+    margin: 0 auto;
     width: 768px;
     padding-left: 16px;
     padding-right: 16px;
@@ -82,24 +80,7 @@
     margin-bottom: 0px;
   }
 
-  .menu-item::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 4px;
-    bottom: -27px;
-    right: 0;
-    background: var(--hover-and-focus-color);
-    border-radius: 2px;
-    transition: width 0.5s, left 0.5s;
-  }
-  .menu-item {
-    position: relative;
-  }
-  .menu-item:hover::after {
-    width: 100%;
-    left: 0;
-  }
+ 
   /* ================HEADER ENDED================ */
 
   /* ================HERO STARTED================ */

@@ -13,6 +13,9 @@
   .for-desktop {
     display: contents;
   }
+  .hidden-for-desktop {
+    display: none;
+  }
   .menu,
   .page-nav,
   .list {
@@ -20,6 +23,25 @@
   }
   .menu {
     padding-top: 0;
+  }
+
+  .menu-item::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 4px;
+    bottom: -27px;
+    right: 0;
+    background: var(--hover-and-focus-color);
+    border-radius: 2px;
+    transition: width 0.5s, left 0.5s;
+  }
+  .menu-item {
+    position: relative;
+  }
+  .menu-item:hover::after {
+    width: 100%;
+    left: 0;
   }
   .address {
     margin-top: 0;
@@ -48,8 +70,7 @@
   }
 
   .hero {
-    width: 1400px;
-    margin: 0 auto;
+    width: 1440px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -78,11 +99,6 @@
   }
   .address li:first-child {
     margin-bottom: 0;
-  }
-
-  .page-header-boxing {
-    padding-top: 24px;
-    padding-bottom: 24px;
   }
 
   .main-title {
@@ -136,4 +152,60 @@
     margin-top: 120px;
     padding-bottom: 0;
   }
+
+  .our-team-list-item {
+    margin: 0;
+  }
+
+  .our-team {
+    padding-bottom: 120px;
+  }
+
+  .our-team-list-item h3 {
+    margin-top: 32px;
+    margin-bottom: 8px;
+  }
+
+  .our-team-list-item:nth-child(-n + 3) {
+    margin-right: 24px;
+  }
+
+  .customers-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .customers-item {
+    width: 168px;
+    height: 88px;
+  }
+
+  .customers-item:nth-child(2n + 1) {
+    margin-right: 0;
+  }
+  .customers-item:nth-child(-n + 4) {
+    margin-bottom: 0;
+  }
+  .customers-item:nth-child(-n + 5) {
+    margin-right: 24px;
+  }
+
+  .small-descr-section-item:nth-child(-n + 3) {
+    margin-right: 24px;
+  }
+
+  .webstudio-container{
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: left;
+    justify-content: space-between;
+  }
+  .links, .footer-form{
+    margin-top: 0;
+  }
+  .footer-input{
+    width: 264px;
+    margin-right: 24px;
+  }
+
 }

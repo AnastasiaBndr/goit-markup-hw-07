@@ -1,6 +1,5 @@
 body {
   font-family: "Roboto", sans-serif;
-  width: 428px;
 }
 
 /* ==================ERASING STYLES================== */
@@ -793,6 +792,14 @@ button {
   visibility: visible;
   transform: translate(0, 0);
   transition-duration: 550ms;
+}
+.contact {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
 
 .modal-info {
