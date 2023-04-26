@@ -846,3 +846,34 @@ button {
 
   color: #2e2f42;
 }
+
+.address .contact{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 40px;
+/* identical to box height, or 111% */
+
+letter-spacing: 0.02em;
+
+/* IRIS */
+
+color: #4D5AE5;
+}
+
+.address .contact-email{
+  font-size: 20px;
+line-height: 1.2;
+/* identical to box height, or 120% */
+
+letter-spacing: 0.02em;
+
+/* SLATE */
+
+color: #434455;
+}
+
+.modal-info-lower-part{
+  margin-bottom: 40px;
+}

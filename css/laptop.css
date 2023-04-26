@@ -7,7 +7,6 @@
     --small-text-dark-theme-color: #f4f4fd;
     --green-icon-focus-hover-color: #31d0aa;
   }
-  
 
   .hidden {
     display: contents;
@@ -80,7 +79,6 @@
     margin-bottom: 0px;
   }
 
- 
   /* ================HEADER ENDED================ */
 
   /* ================HERO STARTED================ */
@@ -196,12 +194,10 @@
   .footer-button {
     margin-left: 24px;
     width: calc(165px + 32px);
-   padding: 8px 24px;
-
+    padding: 8px 24px;
   }
 
   .footer-button-text {
-    
   }
 
   .footer-input {
@@ -228,10 +224,23 @@
   }
 
   .footer-icon {
-   top:10px;
+    top: 10px;
   }
 
   .buttons-list-portfolio {
     justify-content: center;
+  }
+
+  .address .contact,  .address .contact-email {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    /* identical to box height, or 117% */
+
+    letter-spacing: 0.04em;
+
+    /* SLATE */
+
+    color: #434455;
   }
 }
