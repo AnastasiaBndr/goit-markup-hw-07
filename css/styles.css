@@ -33,6 +33,16 @@ button {
   border: none;
 }
 
+@media(min-device-pixel-ratio: 2),(min-resolution:192dpi),(min-resolution:2dppx){
+.hero{
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/mobile/hero-mobile2x.jpg");
+}
+}
+
 /* ==================ELEMENTS================== */
 :root {
   --small-text-color: #2e2f42;
@@ -213,6 +223,7 @@ button {
   width: 428px;
   padding-left: 16px;
   padding-right: 16px;
+  margin: 0 auto;
 }
 
 .page-header {
@@ -570,7 +581,7 @@ button {
 
   background: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
+  border-radius: 50px;
   height: 24px;
   width: 24px;
 
@@ -618,6 +629,11 @@ button {
 }
 .form {
   margin-top: 16px;
+}
+.icon-close-button{
+  position: absolute;
+  left: 33%;
+  top:33%;
 }
 .modal-icon {
   position: absolute;
@@ -785,7 +801,7 @@ button {
 }
 .modal-navigation {
   height: 100%;
-  width: 428px;
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -810,7 +826,7 @@ button {
   padding-bottom: 40px;
   position: absolute;
   height: 100%;
-  width: 428px;
+  width: 100%;
   background-color: var(--background-color);
 }
 

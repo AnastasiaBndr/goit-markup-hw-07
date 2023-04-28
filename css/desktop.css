@@ -1,4 +1,4 @@
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1158px) {
   .container {
     width: 1158px;
     padding-left: 15px;
@@ -6,11 +6,21 @@
     margin: 0 auto;
   }
 
+  @media(min-device-pixel-ratio: 2),(min-resolution:192dpi),(min-resolution:2dppx){
+    .hero{
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/hero-desktop2x.jpg");
+    }
+    }
+
   .hidden {
     display: contents;
   }
 
-  .page-nav{
+  .page-nav {
     align-items: center;
   }
 
@@ -123,6 +133,18 @@
     align-items: center;
     border-radius: 4px;
   }
+  .small-descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    /* or 150% */
+
+    letter-spacing: 0.02em;
+
+    /* SLATE */
+
+    color: #434455;
+  }
 
   .small-descr-section {
     padding: 0;
@@ -198,21 +220,23 @@
     margin-right: 24px;
   }
 
-  .webstudio-container{
+  .webstudio-container {
     display: flex;
     flex-wrap: nowrap;
     text-align: left;
     justify-content: space-between;
   }
-  .links, .footer-form{
+  .links,
+  .footer-form {
     margin-top: 0;
   }
-  .footer-input{
+  .footer-input {
     width: 264px;
     margin-right: 24px;
   }
 
-  .address .contact,  .address .contact-email {
+  .address .contact,
+  .address .contact-email {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -224,5 +248,4 @@
 
     color: #434455;
   }
-
 }
