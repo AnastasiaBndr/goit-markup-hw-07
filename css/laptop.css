@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) and (max-width: 1158px) {
+@media screen and (min-width: 768px) and (max-width: 1440px) {
   :root {
     --small-text-color: #2e2f42;
     --background-color: #ffffff;
@@ -17,7 +17,7 @@
 
   .container {
     margin: 0 auto;
-    width: 768px;
+    max-width: 768px;
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -186,7 +186,9 @@
     width: 168px;
   }
 
-
+  .customers-item:nth-child(3),.customers-item:nth-child(6) {
+    margin-right: -20px;
+  }
   .customers-item:nth-child(3n + 1) {
     margin-left: 0;
   }
