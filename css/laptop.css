@@ -22,15 +22,17 @@
     padding-right: 16px;
   }
 
-  @media(min-device-pixel-ratio: 2),(min-resolution:192dpi),(min-resolution:2dppx){
-    .hero{
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
         url("../images/hero-laptop2x.jpg");
     }
-    }
+  }
 
   /* ================HEADER STARTED================ */
   .page-header {
@@ -182,11 +184,12 @@
     justify-content: center;
   }
 
-  .customers-link{
+  .customers-link {
     width: 168px;
   }
 
-  .customers-item:nth-child(3),.customers-item:nth-child(6) {
+  .customers-item:nth-child(3),
+  .customers-item:nth-child(6) {
     margin-right: -20px;
   }
   .customers-item:nth-child(3n + 1) {
@@ -244,7 +247,8 @@
     justify-content: center;
   }
 
-  .address .contact,  .address .contact-email {
+  .address .contact,
+  .address .contact-email {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.16;
