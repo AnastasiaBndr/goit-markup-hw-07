@@ -481,12 +481,10 @@ button {
 .customers-item:nth-child(2n + 1) {
   margin-right: 16px;
 }
-.customers-item:nth-child(-n + 4) {
+.customers-item:nth-child(-n + 3) {
   margin-bottom: 72px;
 }
-.customers-item:nth-child(5) {
-  margin-bottom: 72px;
-}
+
 .customers-link {
   width: 100%;
   height: 100%;
@@ -803,6 +801,7 @@ button {
   color: var(--small-text-dark-theme-color);
   margin: 0 auto;
   max-width: 268px;
+  text-align: left;
 }
 .modal-navigation {
   height: 100%;
@@ -909,6 +908,10 @@ color: #434455;
   .customers-item:nth-child(2n + 1) {
     margin-right: 0;
   }
+
+  .customers-item:nth-child(5),.customers-item:nth-child(4) {
+  margin-bottom: 72px;
+}
 
   .hero{
     width: 100%;
